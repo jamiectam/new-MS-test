@@ -9,14 +9,21 @@ output:
 ---
 
 
-# Ecosystem Report for the Scotian Shelf 2021
+# Overview of the Ecosystem for the Scotian Shelf 2021
 
 ## Introduction
+We acknowledges we are in Mi’kma’ki – the unceded territory and ancestral homeland of the Mi’kmaq Nation.
 
 ## About this report
 This report is for Fisheries and Oceans Canada fisheries managers and relevant stakeholders. The purpose of this report is to synthesize ecosystem information to better meet fshery management objectives derived from the [Maritimes Ecosystem Based Management Framework] (http://publications.gc.ca/collections/collection_2020/mpo-dfo/Fs97-6-3368-eng.pdf). The information in this report is organized into two sections: 1) to link relevant indicators to meet management objectives from each sustainability pillar of the EBM framework, and 2) to provide sources to information relevant to the socio-ecological system. 
 
 ## Report structure
-The two sections of this 
+The two sections of this report 
 
-### Key Signals within the Environment and Ecosystem: Monitor Features that 
+Table 1. 
+
+```{r}
+
+```
+
+
