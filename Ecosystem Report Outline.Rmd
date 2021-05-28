@@ -1,28 +1,77 @@
 ---
-title: "Ecosystem Report Outline"
-author: "Jamie C Tam"
+title: "Overview of the Ecosystem for the Scotian Shelf 2021"
+author: "Maritimes EBFM Working Group"
 date: "5/28/2021"
 output:
   word_document: default
   html_document: default
   pdf_document: default
 ---
+```{r, echo=FALSE}
+library(knitr)
+```
 
 
 # Overview of the Ecosystem for the Scotian Shelf 2021
 
 ## Introduction
+**Land Acknowledgement**
 We acknowledges we are in Mi’kma’ki – the unceded territory and ancestral homeland of the Mi’kmaq Nation.
 
 ## About this report
-This report is for Fisheries and Oceans Canada fisheries managers and relevant stakeholders. The purpose of this report is to synthesize ecosystem information to better meet fshery management objectives derived from the [Maritimes Ecosystem Based Management Framework] (http://publications.gc.ca/collections/collection_2020/mpo-dfo/Fs97-6-3368-eng.pdf). The information in this report is organized into two sections: 1) to link relevant indicators to meet management objectives from each sustainability pillar of the EBM framework, and 2) to provide sources to information relevant to the socio-ecological system. 
+This report is for Fisheries and Oceans Canada fisheries managers and relevant stakeholders. The purpose of this report is to synthesize ecosystem information to better meet fshery management objectives derived from the [Maritimes Ecosystem Based Management Framework](http://publications.gc.ca/collections/collection_2020/mpo-dfo/Fs97-6-3368-eng.pdf). The information in this report is organized into two sections: 1) to link relevant indicators to meet management objectives derived from the EBM framework, and 2) to provide sources to information relevant to the socio-ecological system. 
 
 ## Report structure
 The two sections of this report 
 
 Table 1. 
 
-```{r}
+```{r, echo=FALSE}
+my_tbl <- tibble::tribble(
+  ~"Management component", ~"Ecosystem Objective *", ~"Indicator",
+      "Ocean Users",     "",     "",
+      "Fishery",     "Maintain fishing pressure consistent with ecosystem's ability to recover
+",     "Fishing pressure, Landings, Fleet structure, Effort by fleet, ghost gear
+",
+      "Non-target species",     "Fish sustainably while minimizing adverse impacts on non-target species
+",     "Discards, Incidental catch
+",
+      "Other ocean users",     "",     "Aquaculture, Energy sector, Shipping and transport
+",
+      "Stakeholder engagement",     "",     "",
+      "Ecological",     "",     "",
+      "Habitat",     "Prevent unacceptable modification to habitat",     "Habitat types, habitat condition, connectivity
+",
+      "Oceanography",     "Key signals within the environment and ecosystem
+",     "AMO, NAO, SST, Bottom Temperature, stratification, Climate anomalies
+",
+      "Productivity and trophic structure",     "Do not cause unacceptable reduction to productivity
+",     "Primary and Secondary productivity, Size structure, PPR, Resource potential
+",
+      "Biodiversity",     "Do not cause unacceptable reduction in biodiversity
+",     "Guild-level biomass, Species Diversity/Richness/Evenness, Charasmatic species, Invasive species
+",
+  "Indigenous Traditional Knowledge",     "",     "",
+      "Economic",     "Ensure ecosystem continues to maintain happiness and wellbeing of individuals
+",     "",
+      "Commercial",     "",     "Total revenue, Revenue components (Bennet indicator)
+",
+      "Non-commercial",     "",     "Recreational fishing, bait
+",
+      "Social and cultural",     "Ensure ecosystem continues to maintain happiness and wellbeing of individuals
+",     "",
+      "Healthy consumption",     "",     "Contaminants, parasites
+",
+      "Benefits",     "",     "Vulnerability index 
+",
+      "Equity",     "",     "Women and underrepresented groups in industry
+"
+  )
+
+
+kable(my_tbl, digits = 3, row.names = FALSE, align = "l",
+              caption = NULL)
+
 
 ```
 
