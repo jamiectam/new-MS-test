@@ -1,0 +1,20 @@
+---
+title: "Ecosystem Report outline"
+author: "Jamie C Tam"
+date: "5/28/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+#Ecosystem Report for the Scotian Shelf
+
+##Introduction
+###About this report
+
+###Report structure
+
+
+###Key Signals within the Environment and Ecosystem: Monitor Features that 
