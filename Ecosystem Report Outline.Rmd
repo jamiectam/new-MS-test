@@ -30,7 +30,7 @@ webshot::install_phantomjs()
 This report is for Fisheries and Oceans Canada fisheries managers and relevant stakeholders. The purpose of this report is to synthesize ecosystem information to better meet fshery management objectives derived from the [Maritimes Ecosystem Based Management Framework](http://publications.gc.ca/collections/collection_2020/mpo-dfo/Fs97-6-3368-eng.pdf). The information in this report is organized into two sections: 1) to link relevant indicators to meet management objectives derived from the EBM framework, and 2) to provide sources of information relevant to the socio-ecological system. 
 
 ## Report structure
-The first section of this report reviews indicator trends and the status of the most recent year relative to a threshold (if available) or a long-term average (Table 1). We synthesisze the results to outline potential implications to the region examined (connecting inidcator status to management and why it is important). 
+The first section of this report reviews indicator trends and the status of the most recent year relative to a threshold (if available) or a long-term average (Table 1). We synthesize the results to outline potential implications to the region examined (connecting indicator status to management and why it is important). 
 
 The second section of this report is a list of all indicators relevant to describing socio-ecological systems but that may not 1)have significant impacts to the region, 2)be a developed enough indicator for the region to be currently informative. This section contians links to data/reports/information sources. 
 
