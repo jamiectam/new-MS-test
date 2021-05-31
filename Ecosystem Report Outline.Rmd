@@ -27,12 +27,12 @@ webshot::install_phantomjs()
 
 
 ## About this report
-This report is for Fisheries and Oceans Canada fisheries managers and relevant stakeholders. The purpose of this report is to synthesize ecosystem information to better meet fishery management objectives derived from the [Maritimes Ecosystem Based Management Framework](http://publications.gc.ca/collections/collection_2020/mpo-dfo/Fs97-6-3368-eng.pdf). The information in this report is organized into two sections: 1) to link relevant indicators to meet management objectives derived from the EBM framework, and 2) to provide sources of information relevant to the socio-ecological system. 
+This report is for Fisheries and Oceans Canada fisheries managers and relevant stakeholders. The purpose of this report is to synthesize ecosystem information to inform an ecosystem approach, as highlighted in the modernized Fisheries Act (2019). It is based on the objectives of the [Maritimes Ecosystem Based Management Framework](http://publications.gc.ca/collections/collection_2020/mpo-dfo/Fs97-6-3368-eng.pdf)and ecosystem based objectives within IFMPs. The information in this report is organized into two sections: 1) to link relevant indicators to meet management objectives derived from the EBM framework, and 2) to provide sources of information relevant to the socio-ecological system (ie. the interconnected natural and social systems). 
 
 ## Report structure
 The first section of this report reviews indicator trends and the status of the most recent year relative to a threshold (if available) or a long-term average (Table 1). We synthesize the results to outline potential implications to the region examined (connecting indicator status to management and why it is important). 
 
-The second section of this report is a list of all indicators relevant to describing socio-ecological systems but that may not 1)have significant impacts to the region, 2)be a developed enough indicator for the region to be currently informative. This section contains links to data/reports/information sources. 
+The second section of this report is a list of all indicators relevant to describing socio-ecological systems but that may not 1)have current and significant impacts to the region, 2)be a developed enough indicator for the region to be currently informative. This section contains links to data/reports/information sources. 
 
 We emphasize that this is a guide to the most current information on socio-ecological systems and indicators and synthesis continue to develop. 
 
@@ -98,7 +98,7 @@ kable(Table_01, digits = 3, row.names = FALSE, align = "l",
 
 ## Section 1: Indicator performance for the Scotian Shelf
 
-Table 2: one way we could "preview" indicators
+Table 2: one way we could "preview" indicators NOT REAL DATA
 
 ```{r, echo=FALSE}
 
@@ -135,6 +135,8 @@ df2 %>%
 
 ```
 
+Text about the indicators how to interpret them with more detailed graphs. Relevance to the management/ecological objective 
+
 
 Table 3: other widget options?
 
@@ -154,8 +156,8 @@ out
 ## Section 2: List of available indicators for the Scotian Shelf region
 
 
-II.	Key Signals within the Environment and Ecosystem: Monitor features that directly impact the sustainability of marine resources.
-a.	Oceanographic Overview
+
+Oceanographic Overview
 i.	Physical
 1.	North Atlantic Oscillation
 2.	Atlantic Multi-decadal Oscillation
@@ -166,12 +168,12 @@ i.	Physical
 7.	Bottom and Deep Water Temperatures
 8.	Runoff and Stratification
 9.	Labrador Current Transport Index
-ii.	Chemical
 1.	pH and CO2
 2.	Biochemical conditions
 3.	Nutrients
 4.	Runoff
-b.	Productivity: Do not cause unacceptable reduction in productivity so the components can play their role in the functioning of the ecosystems.
+
+Productivity: 
 i.	Ecosystem Structure and Functioning
 1.	Lower Trophic Levels
 a.	Primary Productivity
@@ -197,7 +199,8 @@ ii.	Resource Potential
 4.	Fishing Strategies and System Productivity
 a.	Spatial occupancy
 b.	Production Potential 
-c.	Conservation of Biodiversity: Do not cause unacceptable reduction in biodiversity in order to preserve the structure and natural resilience of the ecosystem.
+
+Conservation of Biodiversity: Do not cause unacceptable reduction in biodiversity in order to preserve the structure and natural resilience of the ecosystem.
 i.	Biodiversity
 1.	Keystone and Indicator Species
 a.	Plankton
@@ -219,7 +222,8 @@ ii.	Ecosystem Stability and Resistance to Perturbations
 1.	Ecosystem Resistance
 2.	Stability of the Trophic Community
 3.	Stability of Community Biomass
-III.	Habitat: Prevent unacceptable modification to habitat in order to safeguard the biological, physical and chemical properties of the ecosystem that allow species to complete their life cycle.
+
+Habitat: Prevent unacceptable modification to habitat in order to safeguard the biological, physical and chemical properties of the ecosystem that allow species to complete their life cycle.
 i.	Habitat 
 1.	Biogenic
 a.	Corals and Sponges
@@ -247,7 +251,8 @@ c.	Dynamic Structure
 d.	Water Condition
 e.	Benthic Condition
 5.	Prey
-IV.	Key Signals within the Fishery: Maintain fishing pressure at levels consistent with the ecosystem's ability to recover from it.
+
+Key Signals within the Fishery: Maintain fishing pressure at levels consistent with the ecosystem's ability to recover from it.
 i.	Fishing Pressure 
 1.	Fishing Pressure on the Community 
 2.	Fishing Pressure on Fished Groups
@@ -257,7 +262,8 @@ i.	Fishing Pressure
 6.	Landings of Indicator Species
 7.	Number and size of vessels by fleet
 8.	Effort by fleet
-V.	Social and Economic Considerations: Ensure that the ecosystem continues maintain the prosperity, happiness and wellbeing of individuals and communities that derive a livelihood from it. 
+
+Social and Economic Considerations: Ensure that the ecosystem continues maintain the prosperity, happiness and wellbeing of individuals and communities that derive a livelihood from it. 
 i.	Commercial 
 1.	Total Revenue
 2.	Revenue Components (Bennet Indicator)
@@ -273,7 +279,8 @@ c.	Bait (e.g., mackerel)
 iii.	Healthy Consumption
 1.	Contaminants
 2.	Parasites
-VI.	Management: Fish sustainably while minimizing adverse impacts on non-target species.
+
+Management: Fish sustainably while minimizing adverse impacts on non-target species.
 i.	Precautionary Approach Application
 1.	Total Catch Indices
 2.	Multi-species and/or environmental interactions
@@ -289,7 +296,7 @@ iv.	Area-based management
 
 ## Glossary
 
-Table x: Termanology and concepts
+Table x: Terminology and concepts
 
 ```{r, echo=FALSE}
 
