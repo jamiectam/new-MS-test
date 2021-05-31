@@ -6,40 +6,51 @@ output:
   word_document: default
   html_document: default
   pdf_document: default
+
 ---
-```{r, echo=FALSE}
+```{r, echo=FALSE,message=FALSE, warning=FALSE, include=FALSE}
 library(knitr)
+library(kableExtra)
+library(tidyverse)
+library("magick")
+library("webshot")
+webshot::install_phantomjs()
 ```
 
 
 # Overview of the Ecosystem for the Scotian Shelf 2021
 
 ## Introduction
-**Land Acknowledgement**
-We acknowledges we are in Mi’kma’ki – the unceded territory and ancestral homeland of the Mi’kmaq Nation.
+
 
 ## About this report
-This report is for Fisheries and Oceans Canada fisheries managers and relevant stakeholders. The purpose of this report is to synthesize ecosystem information to better meet fshery management objectives derived from the [Maritimes Ecosystem Based Management Framework](http://publications.gc.ca/collections/collection_2020/mpo-dfo/Fs97-6-3368-eng.pdf). The information in this report is organized into two sections: 1) to link relevant indicators to meet management objectives derived from the EBM framework, and 2) to provide sources to information relevant to the socio-ecological system. 
+This report is for Fisheries and Oceans Canada fisheries managers and relevant stakeholders. The purpose of this report is to synthesize ecosystem information to better meet fshery management objectives derived from the [Maritimes Ecosystem Based Management Framework](http://publications.gc.ca/collections/collection_2020/mpo-dfo/Fs97-6-3368-eng.pdf). The information in this report is organized into two sections: 1) to link relevant indicators to meet management objectives derived from the EBM framework, and 2) to provide sources of information relevant to the socio-ecological system. 
 
 ## Report structure
-The two sections of this report 
+The first section of this report reviews indicator trends and the status of the most recent year relative to a threshold (if available) or a long-term average (Table 1). We synthesisze the results to outline potential implications to the region examined (connecting inidcator status to management and why it is important). 
 
-Table 1. 
+The second section of this report is a list of all indicators relevant to describing socio-ecological systems but that may not 1)have significant impacts to the region, 2)be a developed enough indicator for the region to be currently informative. This section contians links to data/reports/information sources. 
+
+We emphasize that this is a guide to the most current information on socio-ecological systems and indicators and synthesis continue to develop. 
+
+
+Table 1. Ecosystem-scale management objectives in the Scotian Shelf
 
 ```{r, echo=FALSE}
-my_tbl <- tibble::tribble(
+
+Table_01 <- tibble::tribble(
   ~"Management component", ~"Ecosystem Objective *", ~"Indicator",
-      "Ocean Users",     "",     "",
+    
       "Fishery",     "Maintain fishing pressure consistent with ecosystem's ability to recover
-",     "Fishing pressure, Landings, Fleet structure, Effort by fleet, ghost gear
+",     "Fishing pressure, Landings, Fleet structure, Effort by fleet
 ",
       "Non-target species",     "Fish sustainably while minimizing adverse impacts on non-target species
-",     "Discards, Incidental catch
+",     "Discards, Incidental catch, ghost gear
 ",
       "Other ocean users",     "",     "Aquaculture, Energy sector, Shipping and transport
 ",
       "Stakeholder engagement",     "",     "",
-      "Ecological",     "",     "",
+     
       "Habitat",     "Prevent unacceptable modification to habitat",     "Habitat types, habitat condition, connectivity
 ",
       "Oceanography",     "Key signals within the environment and ecosystem
@@ -52,27 +63,39 @@ my_tbl <- tibble::tribble(
 ",     "Guild-level biomass, Species Diversity/Richness/Evenness, Charasmatic species, Invasive species
 ",
   "Indigenous Traditional Knowledge",     "",     "",
-      "Economic",     "Ensure ecosystem continues to maintain happiness and wellbeing of individuals
-",     "",
-      "Commercial",     "",     "Total revenue, Revenue components (Bennet indicator)
+    
+      "Commercial",     "Ensure ecosystem maintains economic prosperity and livelihoods
+",     "Total revenue, Revenue components (Bennet indicator)
 ",
-      "Non-commercial",     "",     "Recreational fishing, bait
+      "Non-commercial",     "Ensure ecosystem maintains economic prosperity and livelihoods
+",     "Recreational fishing, bait
 ",
-      "Social and cultural",     "Ensure ecosystem continues to maintain happiness and wellbeing of individuals
-",     "",
-      "Healthy consumption",     "",     "Contaminants, parasites
+       
+      "Healthy consumption",     "Ensure ecosystem continues to maintain happiness and wellbeing of individuals
+",     "Contaminants, parasites
 ",
-      "Benefits",     "",     "Vulnerability index 
+      "Benefits",     "Ensure ecosystem continues to maintain happiness and wellbeing of individuals
+",     "Vulnerability index 
 ",
-      "Equity",     "",     "Women and underrepresented groups in industry
+      "Equity",     "Ensure ecosystem continues to maintain happiness and wellbeing of individuals
+",     "Women and underrepresented groups in industry
 "
   )
 
 
-kable(my_tbl, digits = 3, row.names = FALSE, align = "l",
-              caption = NULL)
-
-
+kable(Table_01, digits = 3, row.names = FALSE, align = "l",
+              caption = NULL) %>% 
+  kable_paper("striped", full_width=F) %>%
+  pack_rows("Ocean Users",1,4 ) %>%
+  pack_rows("Ecological", 5,9) %>%
+  pack_rows("Economic", 10,11) %>%
+  pack_rows("Social and Cultural", 12, 14)%>%
+  as_image(width=8)
 ```
 
+## Section 1: Indicator performance for the Scotian Shelf
 
+
+
+## Land Acknowledgement
+We acknowledges we are in Mi’kma’ki – the unceded territory and ancestral homeland of the Mi’kmaq Nation.
