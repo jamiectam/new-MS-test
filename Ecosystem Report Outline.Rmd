@@ -27,7 +27,7 @@ webshot::install_phantomjs()
 
 
 ## About this report
-This report is for Fisheries and Oceans Canada fisheries managers and relevant stakeholders. The purpose of this report is to synthesize ecosystem information to inform an ecosystem approach, as highlighted in the modernized Fisheries Act (2019). It is based on the objectives of the [Maritimes Ecosystem Based Management Framework](http://publications.gc.ca/collections/collection_2020/mpo-dfo/Fs97-6-3368-eng.pdf)and ecosystem based objectives within IFMPs. The information in this report is organized into two sections: 1) to link relevant indicators to meet management objectives derived from the EBM framework, and 2) to provide sources of information relevant to the socio-ecological system (ie. the interconnected natural and social systems). 
+This report is for Fisheries and Oceans Canada fisheries managers and relevant stakeholders. The purpose of this report is to synthesize ecosystem information to inform an ecosystem approach, as highlighted in the modernized Fisheries Act (2019). It is based on the objectives of the [Maritimes Ecosystem Based Management Framework](http://publications.gc.ca/collections/collection_2020/mpo-dfo/Fs97-6-3368-eng.pdf) and ecosystem based objectives within IFMPs. The information in this report is organized into two sections: 1) to link relevant indicators to meet management objectives derived from the EBM framework, and 2) to provide sources of information relevant to the socio-ecological system (ie. the interconnected natural and social systems). 
 
 ## Report structure
 The first section of this report reviews indicator trends and the status of the most recent year relative to a threshold (if available) or a long-term average (Table 1). We synthesize the results to outline potential implications to the region examined (connecting indicator status to management and why it is important). 
@@ -98,12 +98,16 @@ kable(Table_01, digits = 3, row.names = FALSE, align = "l",
 
 ## Section 1: Indicator performance for the Scotian Shelf
 
+### Fishery Indicators
+
+A summary of fisheries indicators (Fishing pressure, landings, fleet structure and effort by fleet) and how they have changed over time. What this might mean for the region and the last year. What do the indicators tell us? How could this affect management? What management decisions could be made?
+
 Table 2: one way we could "preview" indicators NOT REAL DATA
 
 ```{r, echo=FALSE}
 
 df <- data.frame(stringsAsFactors=FALSE,
-          V1 = c("indicator", "A", "B", "C"),
+          V1 = c("indicator", "Fishing pressure", "Landings", "Effort"),
           V2 = c(2000L, 100L, 600L, 50L),
           V3 = c(2001L, 200L, 500L, 60L),
           V4 = c(2002L, 300L, 400L, 70L),
@@ -133,6 +137,7 @@ df2 %>%
   spk_add_deps()
 
 
+
 ```
 
 Text about the indicators how to interpret them with more detailed graphs. Relevance to the management/ecological objective 
@@ -155,143 +160,18 @@ out
 
 ## Section 2: List of available indicators for the Scotian Shelf region
 
+```{r, echo=FALSE}
+allindicators<-read.csv(file= 'Section2.csv')
 
 
-Oceanographic Overview
-i.	Physical
-1.	North Atlantic Oscillation
-2.	Atlantic Multi-decadal Oscillation
-3.	Annual Temperature Cycle
-4.	Sea Surface Temperature
-5.	Cold Intermediate Layer
-6.	Sea Ice
-7.	Bottom and Deep Water Temperatures
-8.	Runoff and Stratification
-9.	Labrador Current Transport Index
-1.	pH and CO2
-2.	Biochemical conditions
-3.	Nutrients
-4.	Runoff
+kable(allindicators, digits = 3, row.names = FALSE, align = "l",
+              caption = NULL) %>% 
+  kable_paper("striped", full_width=F)%>%
+ as_image(width=8)
 
-Productivity: 
-i.	Ecosystem Structure and Functioning
-1.	Lower Trophic Levels
-a.	Primary Productivity
-i.	Phytoplankton
-b.	Secondary Productivity
-i.	Zooplankton (biomass and size)
-2.	Ecosystem Structure
-a.	Food Web Disruptions
-i.	Warm Water Species
-ii.	Aquatic Invasive Species
-b.	Biomass of Trophic Guilds and Forage Components
-c.	Size Structure (fish community)
-d.	Spatial
-i.	Quantity Occupancy Aggregation
-ii.	Area-based Changes in Thermal Habitat
-iii.	Patchiness
-3.	Structural Change
-4.	Ecosystem Functioning
-ii.	Resource Potential
-1.	Resource Potential of the Community
-2.	Resource Potential of the Fished Groups
-3.	Resource Potential of Indicator Species
-4.	Fishing Strategies and System Productivity
-a.	Spatial occupancy
-b.	Production Potential 
+```
 
-Conservation of Biodiversity: Do not cause unacceptable reduction in biodiversity in order to preserve the structure and natural resilience of the ecosystem.
-i.	Biodiversity
-1.	Keystone and Indicator Species
-a.	Plankton
-i.	Phytoplankton
-ii.	Zooplankton
-b.	Marine Vegetation
-c.	Marine Invertebrates
-d.	Marine Fish
-e.	Marine Mammals
-i.	Cetaceans
-ii.	Seals
-f.	Seabirds
-g.	Sea Turtles
-2.	Species Richness
-3.	Species Diversity
-4.	Species Evenness
-5.	Range expansion/contraction
-ii.	Ecosystem Stability and Resistance to Perturbations
-1.	Ecosystem Resistance
-2.	Stability of the Trophic Community
-3.	Stability of Community Biomass
 
-Habitat: Prevent unacceptable modification to habitat in order to safeguard the biological, physical and chemical properties of the ecosystem that allow species to complete their life cycle.
-i.	Habitat 
-1.	Biogenic
-a.	Corals and Sponges
-b.	Dominant Species
-c.	Eelgrass
-d.	Kelp
-e.	Mudflats 
-f.	Sand dollars
-g.	Near-shore
-h.	Off-shore
-i.	Benthic
-j.	Pelagic
-k.	Intertidal vegetation
-2.	Non-biogenic
-a.	Rocky Shores
-3.	Area and Structure
-a.	Area/Extent
-b.	Habitat Types
-c.	Fractal Dimension
-d.	Connectivity
-4.	Habitat Condition
-a.	Abiotic Properties
-b.	Biotic Properties
-c.	Dynamic Structure
-d.	Water Condition
-e.	Benthic Condition
-5.	Prey
-
-Key Signals within the Fishery: Maintain fishing pressure at levels consistent with the ecosystem's ability to recover from it.
-i.	Fishing Pressure 
-1.	Fishing Pressure on the Community 
-2.	Fishing Pressure on Fished Groups
-3.	Distribution of Fishing Pressure
-4.	Landings of the Community
-5.	Landings of Fished Groups
-6.	Landings of Indicator Species
-7.	Number and size of vessels by fleet
-8.	Effort by fleet
-
-Social and Economic Considerations: Ensure that the ecosystem continues maintain the prosperity, happiness and wellbeing of individuals and communities that derive a livelihood from it. 
-i.	Commercial 
-1.	Total Revenue
-2.	Revenue Components (Bennet Indicator)
-3.	Stakeholder Engagement
-4.	Overlap with Offshore Activities (wind lease areas)
-5.	Oil and Gas Activities (exploration, spills)
-6.	Pollution (litter occurrences and density from commercial fleets)
-ii.	Non-commercial Fisheries
-1.	Recreational Fishing Harvest and Effort
-a.	Profit-based (e.g., tuna outfitters) (Alex Hanke)
-b.	Socio-cultural (e.g., squid jigs)
-c.	Bait (e.g., mackerel)
-iii.	Healthy Consumption
-1.	Contaminants
-2.	Parasites
-
-Management: Fish sustainably while minimizing adverse impacts on non-target species.
-i.	Precautionary Approach Application
-1.	Total Catch Indices
-2.	Multi-species and/or environmental interactions
-3.	Production Potential (single species)
-ii.	Minimize Harmful Impacts of Fishing
-1.	Level of Protection of Ecosystem
-2.	Level of Protection of Exploited Species
-iii.	Assess Significance of Incidental Mortality of Fishing
-1.	Discards across fisheries
-2.	Incidental catch of depleted/protected species
-iv.	Area-based management 
 
 
 ## Glossary
