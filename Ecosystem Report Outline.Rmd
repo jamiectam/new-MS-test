@@ -109,11 +109,11 @@ Table 2: one way we could "preview" indicators NOT REAL DATA
 df <- data.frame(stringsAsFactors=FALSE,
           V1 = c("indicator", "Fishing pressure", "Landings", "Effort"),
           V2 = c(2000L, 100L, 600L, 50L),
-          V3 = c(2001L, 200L, 500L, 60L),
-          V4 = c(2002L, 300L, 400L, 70L),
-          V5 = c(2003L, 400L, 300L, 80L),
-          V6 = c(2004L, 500L, 200L, 90L),
-          V7 = c(2005L, 600L, 100L, 100L)
+          V3 = c(2001L, 250L, 500L, 80L),
+          V4 = c(2002L, 370L, 300L, 70L),
+          V5 = c(2003L, 399L, 400L, 80L),
+          V6 = c(2004L, 580L, 500L, 100L),
+          V7 = c(2005L, 600L, 120L, 150L)
 )
 
 df.names <- df[1,]
@@ -141,6 +141,7 @@ df2 %>%
 ```
 
 Text about the indicators how to interpret them with more detailed graphs. Relevance to the management/ecological objective 
+
 
 
 Table 3: other widget options?
