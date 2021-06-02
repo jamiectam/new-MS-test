@@ -33,7 +33,7 @@ This report is for Fisheries and Oceans Canada fisheries managers and relevant s
 ### Report structure
 The first section of this report reviews indicator trends and the status of the most recent year relative to a threshold (if available) or a long-term average (Table 1). We synthesize the results to outline potential implications to the region examined (connecting indicator status to management and why it is important). 
 
-The second section of this report is a list of all indicators relevant to describing socio-ecological systems but that may not 1)have current and significant impacts to the region, 2)be a developed enough indicator for the region to be currently informative. This section contains links to data/reports/information sources. 
+The second section of this report is a list of all indicators relevant to describing socio-ecological systems but that may not 1) have current and significant impacts to the region, 2) be a developed enough indicator for the region to be currently informative. This section contains links to data/reports/information sources. 
 
 We emphasize that this is a guide to the most current information on socio-ecological systems and indicators and synthesis continue to develop. 
 
@@ -169,6 +169,7 @@ groundf<-filter(catchdataF, species==c("Atlantic.Cod", "Yellowtail.Flounder", "A
 ffplot<-ggplot(data=foragef, aes(x=YEAR, y=catch, group=species))+
                geom_line(aes(color=species))+
                geom_point(aes(color=species))+
+geom_hline(aes(yintercept=25000, linetype="longterm mean"), colour="red")+
 
   scale_color_brewer() + theme_classic()
               
