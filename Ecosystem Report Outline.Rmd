@@ -177,7 +177,7 @@ print(ffplot)
 
 ```
 
-Figure 1. Landings of Forage fish in the Scotian Shelf (NOT REAL DATA)
+Figure 1. Landings of Forage fish in the Scotian Shelf (NOT REAL DATA.
 
 
 ## Section 2: List of available indicators for the Scotian Shelf region
@@ -219,5 +219,4 @@ kable(glossary, digits = 2, row.names = FALSE, align = "l",
 
 
 
-## Land Acknowledgement
-We acknowledges we are in Mi’kma’ki – the unceded territory and ancestral homeland of the Mi’kmaq Nation.
+
